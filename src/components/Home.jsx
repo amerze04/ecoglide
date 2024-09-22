@@ -10,14 +10,14 @@ const Home = () => {
     
     const images = [skuter1, skuter2, skuter3];
 
-    useEffect(() => {
+   /*  useEffect(() => {
       const timer = setInterval(() => {
         setPrevImageIndex(prevIndex => (prevIndex === 2 ? 0 : prevIndex + 1));
         setImageIndex(prevIndex => (prevIndex === 2 ? 0 : prevIndex + 1));
       }, 3000);
   
       return () => clearInterval(timer);
-    }, []);
+    }, []); */
 
 
   return (

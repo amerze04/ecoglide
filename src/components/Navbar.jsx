@@ -15,17 +15,24 @@ const Navbar = () => {
         
     }
 
+    function turnNavbarOff() {
+
+      navbarItems.current.style.maxHeight = "0";
+      setToggleNavbar(false);
+      
+  }
+
   return (
     <div className='nav'>
 
         <img src={logo} alt="logo"></img>
 
         <ul ref={navbarItems}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#abt">About Us</a></li>
-            <li><a href="#sust">Sustainability</a></li>
-            <li><a href="#test">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a onClick={turnNavbarOff} href="#home">Home</a></li>
+            <li><a onClick={turnNavbarOff} href="#abt">About Us</a></li>
+            <li><a onClick={turnNavbarOff} href="#sust">Sustainability</a></li>
+            <li><a onClick={turnNavbarOff} href="#test">Testimonials</a></li>
+            <li><a onClick={turnNavbarOff} href="#contact">Contact</a></li>
         </ul>
         
         <div onClick={displayNavbar} className={toggleNavbar ? "toggle-navbar-active" : "toggle-navbar"}>

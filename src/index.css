@@ -345,15 +345,17 @@ html {
     }
 
     .sustainability {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 65px 20px;
         flex-direction: column;
+        gap: 1%;
         overflow: hidden;
     }
 
     .first, .second, .third {
         border: none;
         padding: 0;
+        overflow-y: auto;
     }
 
     .second {
@@ -456,15 +458,22 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 30px;
     }
 
     .test-card {
-        height: 28%;
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
     }
 
     .test-card p {
         font-size: .7rem;
+        padding: 2%;
+    }
+
+    .profile {
+        padding: 3% 0 1%;
     }
 
     .profile .image {
@@ -472,9 +481,21 @@ html {
         height: 25px;
     }
 
+    .profile .image img {
+        width: 100%;
+    }
+
     .profile h2 {
         font-size: .8rem;
     }
+}
+
+@media (max-width: 400px) {
+
+    .test-card p {
+        font-size: .6rem;
+    }
+
 }
 
 
@@ -587,6 +608,10 @@ html {
 
     .abt-card p {
         font-size: 1rem;
+    }
+
+    .abt-card h1 {
+        font-size: 2rem;
     }
   }
 
@@ -742,4 +767,12 @@ html {
     .buttons button {
         margin: 0 4px;
     }
+
+    #sust, #home, #test, #abt {
+        scroll-margin-top: 13vh;
+      }
+  }
+
+  #sust, #home, #test, #abt {
+    scroll-margin-top: 13vh;
   }
